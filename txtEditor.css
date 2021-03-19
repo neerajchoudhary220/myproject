@@ -1,0 +1,79 @@
+.txtEditorBox{
+    border:2px solid gray;
+    position: relative;
+    width: fit-content;
+    margin: 2%;
+    padding: 1%;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    left:1%;
+    background-color: #ff9800;
+
+}
+.txtEditor2{
+    border: 1px solid;
+padding: 0.5%;
+font-family: 'Comic Sans MS', cursive, sans-serif;
+background-color: #ffc107;
+color: #ff5722;
+
+
+}
+#wt,#rt
+{
+    border:2px solid;
+    border-radius: 0.5em;
+    color:rgb(71, 53, 18);
+    outline: none;
+}
+.mic:hover{
+    cursor:pointer;
+    height:22px;
+    width:15px;
+    
+}
+#words{
+   
+    
+}
+.Downloadicon:hover,#dwn-btn:hover{
+    height:20px;
+    width:18px;
+    cursor: pointer;
+}
+#playspeech:hover{
+    height: 22px;
+    width: 22px;
+    cursor: pointer;
+    
+}
+.replaceBtn{
+    float:right;
+         font-family: 'Comic Sans MS', cursive, sans-serif;
+         border-radius:0.5em;
+         background-color: rgb(235, 98, 19);
+         color:white;
+         border-color: white;
+         outline: none;
+         
+}
+.saveBtn{
+    background-color:rgb(235, 98, 19);
+    color:white;
+     border-color: white;
+     outline: none;
+}
+.saveBtn,.replaceBtn:active{
+    transform: translateY(1px);
+    outline: none;
+    
+}
+body{
+/*background-image: url("https://erontechnosolutions.com/blog/images/2018/websitedevelopment/MakeAGreatWebsiteForYourBusiness.jpg");*/
+background-image:url("https://www.teahub.io/photos/full/302-3023885_professional-blue-website-background.png");
+background-color: #141313;
+height: 550px;;
+background-position:center;
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;
+}

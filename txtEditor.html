@@ -1,0 +1,88 @@
+
+<div id="FileName" style="
+            position: absolute; 
+            margin:2%;
+            left:7%;
+            top:18%;
+            padding:1%;
+            border-radius:0.5em;
+            width: fit-content;
+            border: 1px solid;
+            box-shadow: 1px 6px 5px 2px;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            background-color: #ffc107;
+            z-index: 1;
+            display: none;
+            ">
+                <label>Enter Your File Name:</label><br>
+                <input type="text" 
+                 id="NameOfFile"
+                 style="
+                 border: 2px solid;
+                 border-radius:0.5em;
+                 float: left;
+                 outline: none;
+                 " placeholder="MyTxtFile">
+                 <input type="button" value="SAVE" id="saveBtn"
+                 style="position: relative;
+                 font-family: 'Comic Sans MS', cursive, sans-serif;
+                 border-radius:0.5em;
+                 float: right;
+                 font-size:12px;
+                 " class="saveBtn"><br>
+            </div>
+            <div class="txtEditorBox" id="txtEditorBox">
+            <label style="float:left; font-size: medium; color:white;" >Text Editor:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label><br>
+            
+            <textarea cols="50" rows="20" id="myTxt" placeholder="Write text here..."
+             onkeypress="wordCount()" autofocus="" 
+             style="margin: 0px;
+              min-width: 1122px;
+               min-height: 166px;
+                width: 1122px;
+                 height: 166px;
+                  background-color: rgb(31, 30, 30);
+                   color: lightgreen; font-size: x-large;
+                   font-family: 'Comic Sans MS', cursive, sans-serif;
+            letter-spacing: 0px;"></textarea>
+            
+            
+            <br>
+            <div class="txtEditor2">
+
+            <label id="words" style="float: left;">Words: 0</label>
+            
+            <label style="float:left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+           <img src="https://image.flaticon.com/icons/png/512/724/724933.png"
+            width="16px"
+            height="18px" style="position: relative;
+            float:left;" id="dwn-btn" onclick="dwnBtn()" class="Downloadicon" ></img><label>&nbsp;&nbsp;Download</label>
+           
+            <label id="action" style="float:right;"><small>Speak</small></label>
+            <img src="https://www.freeiconspng.com/thumbs/microphone-png/microphone-png-17.png" 
+            width="10px"
+            height="18px" style="
+            float:right;
+            right:5px;
+            position: relative;" class="mic" id="mic" onclick="runSpeechRecognition()"></img>
+            <img onclick="playSpeech()" id="playspeech" 
+            width="20px"
+             height="20px"
+             style="position: relative;
+             right:20px;
+             float: right;"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Speaker_Icon.svg/500px-Speaker_Icon.svg.png">
+             </img>
+            <hr><br>
+            
+            <label style="float:left">Replace word:&nbsp;&nbsp;</label>
+            
+            <input type="text" id="wt" placeholder="......"><br><br>
+            <label style="float:left">Replace This: &nbsp;&nbsp;</label>
+            <input type="text" id="rt" placeholder="......"><br>
+            <input type="button" value="Replace" onclick="Replace()" class="replaceBtn" id="replaceBtn">
+        <input type="button" value="All Clear" class="replaceBtn" id="allclr" onclick="allClear()"><br>
+        
+    </div>
+
+        </div>
